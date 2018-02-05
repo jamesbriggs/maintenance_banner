@@ -119,5 +119,5 @@ Please create a Github issue with any improvements or security issues.
 - The PHP PDO Postgresql date range error exception is not raised for some reason.
 - The Postgresql create table script could be simplified.
 - Actual sample code for user application integration in several programming languages.
-- Could include pre-made CSS and icons for quicker deployment setup.
+- Could include pre-made CSS and icons for quicker deployment setup, like the Clarity icons: https://vmware.github.io/clarity/icons/icon-sets#core-shapes
 
