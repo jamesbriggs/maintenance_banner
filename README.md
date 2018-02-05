@@ -1,6 +1,6 @@
 # Maintenance Banner
 
-Maintenance Banner (mx_banner.php) is a single-file PHP administrative web application to update banner settings in a database for your user web application to SELECT and display.
+Maintenance Banner (mx_banner.php) is a single-file 300-line PHP administrative web application to update banner settings in a database for your user web application to SELECT and display.
 
 It is useful when managing production web applications to inform users of scheduled maintenance by showing a banner to users immediately upon login or homepage refresh.
 
@@ -72,7 +72,7 @@ insert into intercom (dt_start, dt_end, message, type) values ('2018-01-11 14:17
 select id, dt_start, dt_end, message, type from intercom where dt_start <= now() and dt_end >= now() order by dt_start;
 ```
 
-   In PHP or Perl:
+   In a PHP or Perl here-document:
 
 ```html
 <div class="$type">
