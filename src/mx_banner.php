@@ -47,7 +47,7 @@
    $user  = 'postgres';
    $pw    = '';
 
-   $product = 'pgsql'; # or 'pgsql'
+   $product = 'pgsql'; # 'mysql' or 'pgsql'
    if ($product === 'mysql') {
       $port = 3306;
    }
@@ -186,6 +186,7 @@ EOT;
 <td><a href="$prog?a=u&id=$row[0]">Edit</a> | 
 <a href="$prog?a=d&id=$row[0]" onclick="return confirm('Are you sure you want to delete this event?');">Delete</a></td>
 <td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td>
+</tr>
 EOT;
             $n++;
          }
