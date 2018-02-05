@@ -38,11 +38,13 @@ chmod 755 mx_banner.php
 
    For MySQL, schema creation is as simple as:
 
-    mysql -h host_name -u root -p database_name < mx_banner_mysql.sql
+```bash
+mysql -h host_name -u root -p database_name < mx_banner_mysql.sql
+```
 
    For Postgresql, schema creation is more complicated since sequences and roles are required.
 
-   I'd recommend asking your DBA to do the schema creation, or use pg_admin and manually do the setup while looking at mx_banner_pgsql.sql.
+   I'd recommend asking your DBA to do the schema creation, or use pgloader, or pgAdmin and manually do the setup while looking at mx_banner_pgsql.sql.
 
 5. if it doesn't seem to work and no errors are displayed, edit /etc/php.ini and set display_errors=on
 
