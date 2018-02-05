@@ -34,7 +34,7 @@ chown root:root mx_banner.php
 chmod 755 mx_banner.php
 ```
 
-3. edit mx_banner.php and configure the user settings for your database
+3. edit mx_banner.php and configure the user settings for your database, which can be local or remote.
 4. create the intercom table schema using mx_banner_mysql.sql or mx_banner_pgsql.sql
 
    For MySQL, schema creation is as simple as:
