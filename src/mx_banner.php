@@ -179,7 +179,6 @@ EOT;
          }
    
          $s = '';
-         $n = 0;
          foreach($rows as $row) {
             $s .= <<<EOT
 <tr>
@@ -188,9 +187,8 @@ EOT;
 <td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td>
 </tr>
 EOT;
-            $n++;
          }
-         if ($n === 0) {
+         if ($s === '') {
             echo <<<EOT
 <p>No intercom events.</p>
 <p><a href="$prog?a=c">Add Event</a></p>
