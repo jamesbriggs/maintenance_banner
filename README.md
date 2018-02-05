@@ -8,9 +8,10 @@ From an SRE perspective, as you achieve availability levels above 3x9's, it beco
 
 mx_banner.php is also a minimal but non-trivial CRUD application that illustrates secure programming with PHP using database placeholders (?) and strip_tags().
 
-## Screenshot
+## Screenshots
 
 ![mx_banner list of events](https://github.com/jamesbriggs/maintenance_banner/blob/master/docs/mx_banner.png)
+![user application displaying event](https://github.com/jamesbriggs/maintenance_banner/blob/master/docs/mx_banner_user.png)
 
 ## Dependencies:
 
