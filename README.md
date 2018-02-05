@@ -86,9 +86,9 @@ select id, dt_start, dt_end, message, type from intercom where dt_start <= now()
 
 mx_banner.php is a single-file application, so future upgrades are very simple - just copy the new version over the old file and adjust the permissions as required.
 
-## Licence
+## License
 
-Apache 2.0 Licence
+Apache 2.0 License
 
 ## Copyright
 
@@ -98,15 +98,14 @@ You may use Maintenance Banner on a non-exclusive basis and re-distribute in you
 
 ## Contact
 
-Please file a Github issue with any improvements or security issues.
+Please create a Github issue with any improvements or security issues.
 
 ## Todo
 
 - JavaScript input validation could be fancier.
 - Security is always evolving in web programs.
-- The PHP PDO Postgresql date range error exception path is not called for some reason.
+- The PHP PDO Postgresql date range error exception is not raised for some reason.
 - The Postgresql create table script could be simplified.
 - Actual sample code for user application integration in several programming languages.
 - Could include pre-made CSS and icons for quicker deployment setup.
-
 
