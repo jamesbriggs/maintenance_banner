@@ -22,7 +22,17 @@ Requires the PHP PDO database library for either MySQL or Postgresql:
 ```bash
 yum install php-pgsql
 yum install php-mysql
+service httpd restart
 ```
+
+   On Ubuntu or Debian as root:
+
+```bash
+apt-get install php-pgsql
+apt-get install php-mysql
+/etc/init.d/apache2 restart
+```
+
 
 ## Admin Installation:
 
