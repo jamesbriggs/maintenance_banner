@@ -4,9 +4,9 @@ Maintenance Banner (mx_banner.php) is a single-file PHP administrative web appli
 
 It is useful when managing production web applications to inform users of scheduled maintenance by showing a banner to users immediately upon login or homepage refresh.
 
-From an SRE perspective, as you achieve availability levels above 3x9's, it becomes more important to inform users of even brief interruptions and to schedule maintenance windows.
+From an SRE perspective, as you achieve availability levels above 3x9's, it becomes more important to inform users of even brief interruptions and to coordinate maintenance windows.
 
-mx_banner.php is also a minimal but non-trivial CRUD application that illustrates secure programming with PHP using database placeholders and strip_tags().
+mx_banner.php is also a minimal but non-trivial CRUD application that illustrates secure programming with PHP using database placeholders (?) and strip_tags().
 
 ## Screenshot
 
@@ -46,7 +46,7 @@ mysql -h host_name -u root -p database_name < mx_banner_mysql.sql
 
    I'd recommend asking your DBA to do the schema creation, or use pgloader, or pgAdmin and manually do the setup while looking at mx_banner_pgsql.sql.
 
-5. if it doesn't seem to work and no errors are displayed, edit /etc/php.ini and set display_errors=on
+5. if it doesn't seem to work and no errors are displayed, edit /etc/php.ini and set `display_errors=on` and restart your web server.
 
 ## Troubleshooting:
 
