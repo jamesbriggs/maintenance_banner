@@ -28,6 +28,7 @@ service httpd restart
    On Ubuntu or Debian as root:
 
 ```bash
+apt-get update
 apt-get install php-pgsql
 apt-get install php-mysql
 /etc/init.d/apache2 restart
