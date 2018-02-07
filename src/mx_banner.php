@@ -263,7 +263,7 @@ EOT;
 
 function clean($s) {
    # if you want to display HTML tags or special characters in the message and are using SSL with authentication, then you can remove strip_tags() below
-   return trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9 _.!-]/', ' ', urldecode(html_entity_decode(strip_tags($s))))));
+   return trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9 _.,!-]/', ' ', urldecode(html_entity_decode(strip_tags($s))))));
 }
 
 function clean_string($s) {
